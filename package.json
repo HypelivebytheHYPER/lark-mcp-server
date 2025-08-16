@@ -1,14 +1,11 @@
-{
-  "name": "lark-mcp-server",
-  "version": "1.0.0",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "start": "node server.js",
-    "dev": "node server.js"
-  },
-  "dependencies": {
-    "express": "^4.19.2",
-    "execa": "^8.0.1"
-  }
-}
+ {
+   "name": "lark-mcp-server",
+   "type": "module",
+   "private": true,
+   "scripts": {
+     "start": "node server.js"
+   },
+   "dependencies": {
++    "http-proxy-middleware": "^3.0.0"
+   }
+ }
