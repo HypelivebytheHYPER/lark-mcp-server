@@ -7,7 +7,7 @@ RUN apk add --no-cache bash curl
 WORKDIR /app
 
 COPY package*.json ./
-RUN npm ci --only=production
+RUN npm install --only-production
 
 COPY . .
 
@@ -15,5 +15,5 @@ COPY . .
 USER node
 
 EXPOSE 8080
-ENV PORT=8080
+ENV POQ=8080
 CMD ["npm", "start"]
