@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: lark-mcp-server
+    env: docker
+    plan: pro
+    autoDeploy: true
+    healthCheckPath: /health
+    envVars:
+      - key: APP_ID
+        sync: false
+      - key: APP_SECRET
+        sync: false
+      - key: LARK_DOMAIN
+        value: https://open.larksuite.com
+      - key: LARK_MCP_TOOLS
+        sync: false
