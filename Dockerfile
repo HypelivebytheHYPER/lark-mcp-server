@@ -7,7 +7,7 @@ RUN apk add --no-cache bash curl
 WORKDIR /app
 
 COPY package*.json ./
-RUN npm install --only-production
+RUN npm ci --omit=dev
 
 COPY . .
 
